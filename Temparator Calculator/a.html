@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="b.css">
+    <style>
+        body{
+            background-image: url('https://images.unsplash.com/photo-1611077544637-f826625c2776?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGVuZ3RofGVufDB8fDB8fHww&w=1000&q=80');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
 
+        }
+        h2{
+            color:red
+        }
+        
+        .container {
+      margin: 20px auto;
+      width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <script src="c.js"></script>
+    <div class="container">
+    <h2>Length Converter</h2>
+<form name="lengthCon" >
+	
+		<p class="Value">From</p> 
+			<select class="movement" name=fromUnit onChange="convertUnit()">
+			<option> meters
+			<option> kilometers
+			<option> miles
+      <option> feet 
+      <option> yards
+			</select>
+		
+		 <p class="Options">To</p>
+		<p>
+			<select class="moves" name=toUnit onChange="convertUnit()">
+			<option> meters
+			<option> kilometers
+			<option> miles
+      <option> feet
+      <option> yards
+			</select>
+  </p>
+	
+		<p colspan="4"><div id="formula">meters = 1 meters</div></p>
+
+		<p class="Walk">Enter </p>
+		<p><input class="around" type="text" name="fromValue" value="1" size="5" maxlength="10"></p>
+		<p><input class="yah"type=button value="Convert" onClick="convertUnit()"></p>
+		<p><span id="toValue"> 1</span></p>
+</form>
+
+    </div>
+</body>
+</html>
